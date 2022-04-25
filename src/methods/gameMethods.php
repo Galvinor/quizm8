@@ -3,7 +3,7 @@
 $correctAnswers = ["Demon's Souls","Big Boss","Varré","Samus Aran","Arthas Menethil","Dracula",
 "Halo","Adolf Hitler","Todas son correctas","FFIV"];
 
-$victoryCondition = 5;
+$victoryCondition = 7;
 
 function checkAnswer(string $answer, int $questionId){
 
@@ -24,7 +24,6 @@ function victoryCheck(int $totalCorrect){
     }
     return true;
 }
-
 
 
 
