@@ -9,10 +9,10 @@ function checkAnswer(string $answer, int $questionId){
 
     global $correctAnswers;
 
-    if ($answer !=  $correctAnswers[$questionId-1]){
-        return false;
+    if ($answer ==  $correctAnswers[$questionId-1]){
+        return true;
     }
-    return true;
+    return false;
 }
 
 function victoryCheck(int $totalCorrect){
