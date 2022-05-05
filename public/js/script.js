@@ -8,7 +8,7 @@ if(count == 0) {
     formData.append('quizId', count);
     fetch("src/methods/load.php", {
         method: "POST",
-        body: formData.get('quizId'),
+        body: formData
     })
     .then((response) => response.text())
     .then((datos)=> {
@@ -26,7 +26,7 @@ buttons.forEach(button => {
         formData.append('quizId', count);
         fetch("src/methods/load.php", {
             method: "POST",
-            body: formData.get('quizId'),
+            body: formData
         })
         .then((response) => response.text())
         .then((datos)=> {

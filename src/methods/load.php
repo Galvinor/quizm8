@@ -11,12 +11,12 @@ if($_POST) {
     $resultado = $consulta->fetch(PDO::FETCH_ASSOC);
     
     // enviamos el resultado
-    echo "
+    /*echo "
     <h2>".$resultado['pregunta']."</h2>
     <input type='number' style='display:none;' name='quizId' id='quizId' value='".$resultado['id']."'><br>
     <input type='radio' name='encuesta' id='encuesta' value='1'>".$resultado['respuesta1']."<br>
     <input type='radio' name='encuesta' id='encuesta' value='2'>".$resultado['respuesta2']."<br>
     <input type='radio' name='encuesta' id='encuesta' value='3'>".$resultado['respuesta3']."<br>
     <input type='radio' name='encuesta' id='encuesta' value='3'>".$resultado['respuesta4']."<br>
-    <input type='submit' value='Enviar' class='boton' id='btenviar'>";
+    <input type='submit' value='Enviar' class='boton' id='btenviar'>";*/
 }
